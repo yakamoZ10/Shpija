@@ -12,6 +12,7 @@ permissions:
   contents: read
 
 jobs:
+
   DeployProd:
     runs-on: ubuntu-latest
     steps:
