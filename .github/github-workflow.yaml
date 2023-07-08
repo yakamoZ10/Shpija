@@ -29,11 +29,7 @@ jobs:
         run: |
 
           aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 313422618945.dkr.ecr.eu-central-1.amazonaws.com
-<<<<<<< HEAD
           cd ./appstellar-ick-training
-=======
-          cd ./appstellar-ick-training-web
->>>>>>> 7fd282fa97d71666ba3c96ebbdc6ad0b2daa9eae
           docker build -f ./Dockerfile -t webapp .
           docker tag webapp  ${{ env.AWS_ECR_URI }}:dev
           docker push ${{ env.AWS_ECR_URI }}:dev
