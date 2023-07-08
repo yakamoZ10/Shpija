@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: deploy-prod
 
 on:
@@ -35,3 +36,6 @@ jobs:
           docker push ${{ env.AWS_ECR_URI }}:dev
 
           
+=======
+
+>>>>>>> b6fe805d83356f2ac4cae4cc41dd71653346ae52
